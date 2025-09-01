@@ -24,17 +24,17 @@ const Entreprise = () => {
     {
       title: "Formation Professionnelle",
       description: "Programme de formation pour les jeunes de San-Pedro dans l'hôtellerie et la restauration",
-      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "im-2.jpg",
     },
     {
       title: "Développement Local",
       description: "Soutien aux initiatives locales pour promouvoir le tourisme à San-Pedro",
-      image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "im-3.jpg",
     },
     {
       title: "Autonomisation des Femmes",
       description: "Programmes d'accompagnement pour les femmes entrepreneures en Côte d'Ivoire",
-      image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "im-4.jpg",
     },
   ];
 
@@ -93,9 +93,9 @@ const Entreprise = () => {
 
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/im-1.jpg"
                 alt="Groupe Enotel"
-                className="rounded-2xl shadow-2xl"
+                className="rounded-2xl w-full h-full object-cover shadow-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl" />
             </div>
@@ -155,7 +155,7 @@ const Entreprise = () => {
                   <img
                     src={cause.image}
                     alt={cause.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                 </div>
