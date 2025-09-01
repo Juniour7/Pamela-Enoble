@@ -7,21 +7,21 @@ const Accueil = () => {
       title: "L'interview cash de Pamela Enoble",
       url: "https://www.facebook.com/watch/?v=840703443819805",
       platform: "Facebook",
-      thumbnail: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
+      thumbnail: "/img-1.jpg",
       icon: Facebook,
     },
     {
       title: "Podcast avec YouthMedia",
       url: "https://youthmedia.net/podcast/pamela-enoble",
       platform: "YouthMedia",
-      thumbnail: "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800",
+      thumbnail: "/img-3.jpg",
       icon: ExternalLink,
     },
     {
       title: "Interview Exclusive",
       url: "https://www.facebook.com/watch/?v=3354380464646536",
       platform: "Facebook",
-      thumbnail: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800",
+      thumbnail: "/img-4.jpg",
       icon: Facebook,
     },
   ];
@@ -55,7 +55,7 @@ const Accueil = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black" />
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/img-2.jpg')] bg-cover bg-center opacity-20" />
         
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           <div className="mb-8">
@@ -134,7 +134,7 @@ const Accueil = () => {
                     <img
                       src={interview.thumbnail}
                       alt={interview.title}
-                      className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-48 object-cover object-top group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
                     <div className="absolute top-4 right-4">
